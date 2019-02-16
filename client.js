@@ -42,7 +42,7 @@ input.on('message', function(deltaTime, message) {
 
   ws.send(JSON.stringify({
       c: 's',
-      channel: 'cool',
+      channel: config.channel,
       controller: name,
       d: message,
   }))
