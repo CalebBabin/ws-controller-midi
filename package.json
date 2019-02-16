@@ -1,0 +1,23 @@
+{
+  "name": "ws-controller-midi",
+  "version": "1.0.0",
+  "description": "Midi controller interface for the WebSocket controller project",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebBabin/ws-controller-midi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebBabin/ws-controller-midi/issues"
+  },
+  "homepage": "https://github.com/CalebBabin/ws-controller-midi#readme",
+  "dependencies": {
+    "midi": "^0.9.5",
+    "ws": "^6.1.4"
+  }
+}
