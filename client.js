@@ -30,7 +30,7 @@ const input = new midi.input();
 input.getPortCount();
  
 // Get the name of a specified input port.
-input.getPortName(0);
+const name = input.getPortName(0);
  
 // Configure a callback.
 input.on('message', function(deltaTime, message) {
@@ -43,6 +43,7 @@ input.on('message', function(deltaTime, message) {
   ws.send(JSON.stringify({
       c: 's',
       channel: 'cool',
+      controller: name,
       d: message,
   }))
 });
